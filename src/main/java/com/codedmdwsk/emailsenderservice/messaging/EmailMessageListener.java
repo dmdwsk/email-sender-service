@@ -1,6 +1,7 @@
 package com.codedmdwsk.emailsenderservice.messaging;
 
 import com.codedmdwsk.emailsenderservice.config.RabbitMqConfig;
+import com.codedmdwsk.emailsenderservice.service.EmailSendingService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
