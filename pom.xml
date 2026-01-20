@@ -84,7 +84,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Дуже рекомендую для polling в інтеграційних тестах -->
         <dependency>
             <groupId>org.awaitility</groupId>
             <artifactId>awaitility</artifactId>

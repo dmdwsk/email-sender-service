@@ -13,7 +13,7 @@ public class EmailRetryScheduler {
     private final EmailMessageRepository repo;
     private final EmailSendingService emailSendingService;
 
-    @Scheduled(fixedDelayString = "PT5M")
+    @Scheduled(fixedDelayString = "${email.retry.delay:PT5M}")
     public void retryFailed() {
         var failed = repo.findTop50ByStatusOrderByCreatedAtAsc(EmailStatus.FAILED);
         for (var msg : failed) {
